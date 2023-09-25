@@ -626,23 +626,6 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                 delete this.game[room.id]
             }
         }
-        if (anti1liat) {
-            if (m.isGroup && m.mtype == 'viewOnceMessage') {
-                let teks = `╭「 *Anti ViewOnce* 」\n├ *Name* : ${pushname}\n├ *User* : @${m.sender.split("@")[0]}\n├ *Clock* : ${hariini}\n└ *Message* : ${m.mtype}`
-                arxzy.sendMessage(m.chat, {
-                    text: teks,
-                    mentions: [m.sender]
-                }, {
-                    quoted: m
-                })
-                await sleep(500)
-                m.copyNForward(m.chat, true, {
-                    readViewOnce: true
-                }, {
-                    quoted: m
-                }).catch(_ => m.reply(mess.error))
-            }
-        }
         /* ~~~~~~~~~ RESPON USER AFK ~~~~~~~~~ */
         if (m.isGroup && !m.key.fromMe) {
             let mentionUser = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
