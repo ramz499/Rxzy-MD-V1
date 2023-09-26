@@ -14,7 +14,7 @@ const {
     prepareWAMessageMedia,
     areJidsSameUser,
     getContentType
-} = require('@adiwajshing/baileys')
+} = require('@WhiskeySockets/Baileys')
 const os = require('os')
 const fs = require('fs')
 const fsx = require('fs-extra')
