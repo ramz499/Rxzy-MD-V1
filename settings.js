@@ -11,12 +11,12 @@ const chalk = require('chalk')
 global.lol = '' // https://api.lolhuman.xyz
 global.xzn = '' // https://xnz.wtf
 /* ~~~~~~~~~ SETTINGS OWNER ~~~~~~~~~ */
-global.numberowner = '6289513081052' // Owner Utama
-global.owner = ['6289513081052', '6283838530788'] // Owner Lainnya
+global.numberowner = '6282232067742' // Owner Utama
+global.owner = ['6282232067742', '6282232067742'] // Owner Lainnya
 global.namaowner = 'Arxzy お-ぎ' // Nama Owner
-global.premium = ["6289513081052"] // Premium User
+global.premium = ["6282232067742"] // Premium User
 /* ~~~~~~~~~ SETTINGS BOT ~~~~~~~~~ */
-global.namabot = 'Arxzy-MD' // NickBot
+global.namabot = 'Ram-MD' // NickBot
 global.typemenu = 'v2' 
 // 'v1' > 'v2' > 'v3'
 // 'v1' Image ORI!
@@ -44,7 +44,7 @@ global.mess = {
 global.thumb = fs.readFileSync('./media/quoted.jpg')
 global.menu = fs.readFileSync('./media/menu.jpg')
 /* ~~~~~~~~~ EDITS LINK ~~~~~~~~~ */
-global.link = 'https://chat.whatsapp.com/LfBvDxQujrLHihSRI6TCIZ'
+global.link = 'https://chat.whatsapp.com/EUs9eFViJnXC57YvcSnMuR'
 /* ~~~~~~~~~ END SYSTEM ~~~~~~~~~ */
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
